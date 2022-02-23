@@ -19,7 +19,7 @@ PH will need to fill 25916 roles for the position of "Senior Engineer", 24926 ro
 
 The good thing is that PH has around 1550 employees available for the mentorship eligibility program. And the good thing is that many of them hold the positions of "Senior Engineer" and "Senior Staff" which is a good thing since these positions will have the most number of vacancies in the future. 
 
-One more thing which we could have done was to group the titles and count them in the mentorship_eligibility table. This way, we would know the number of employess eigible for the mentorship program according to their titles. This could have been done by using the following query:
+One more thing which we could have done was to group the titles and count them in the mentorship_eligibility table. This way, we would know the number of employees eligible for the mentorship program according to their titles. This could have been done by using the following query:
 
 SELECT  COUNT(title), title
 INTO unique_mentorship_eligibility
@@ -28,3 +28,4 @@ GROUP BY title
 ORDER BY COUNT(title) DESC
 ;
 
+Another thing which could have been done was to use the salaries table in order to figure out how much money would each employee be paid in their retirement package. 
